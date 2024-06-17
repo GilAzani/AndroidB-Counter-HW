@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Water Counter</string>
+    <string name="title">Drink Water</string>
+    <string name="description">cups of water: </string>
+    <string name="plus_count">+1 cup</string>
+    <string name="minus_count">-1 cup</string>
+
+</resources>
