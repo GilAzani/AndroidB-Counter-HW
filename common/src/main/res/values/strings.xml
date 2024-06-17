@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Counter</string>
+    <string name="title">Counter</string>
+    <string name="description">amount counted: </string>
+    <string name="plus_count">+</string>
+    <string name="minus_count">-</string>
+
+
+</resources>

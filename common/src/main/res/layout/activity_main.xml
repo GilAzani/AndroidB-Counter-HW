@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- No Smoking Title -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/counterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Days Counter below the title -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/counterDescriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/counterTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/description"
+        android:textSize="24sp" />
+
+    <!-- Days Counter Value -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/counterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/counterDescriptionLabel"
+        android:layout_alignBaseline="@+id/counterDescriptionLabel"
+        android:text="0"
+        android:textSize="24sp" />
+
+    <!-- Cigarette Image with X in the middle -->
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/counterImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/counterDescriptionLabel"
+        android:layout_above="@+id/dayButtonsContainer"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/counter_image" />
+
+    <!-- Plus and Minus Day Buttons Container -->
+    <LinearLayout
+        android:id="@+id/dayButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetButton"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <!-- Minus Day Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/minusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_count"
+            android:layout_marginEnd="8dp"
+            />
+
+        <!-- Plus Day Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/plusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_count"
+            android:layout_marginStart="8dp"
+            />
+
+
+    </LinearLayout>
+
+    <!-- Reset Days Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reset Days" />
+
+</RelativeLayout>

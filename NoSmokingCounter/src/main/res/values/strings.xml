@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quit Smoking</string>
+    <string name="title">No Smoking</string>
+    <string name="description">Days Without Smoking: </string>
+    <string name="plus_count">+1 day</string>
+    <string name="minus_count">-1 day</string>
+</resources>
